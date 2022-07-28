@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Monospace, sans-serif;
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    color: white;
+    background-repeat: no-repeat;
+}
+header {
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 2%;
+}
+#logo a {
+    position: fixed;
+}
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+    display:block;
+    font-size: 1.2em;
+}
+li a:hover {
+    text-decoration: underline 1px;
+    text-underline-offset: 5px;
+    cursor: pointer;
+}
+.nav_links {
+    list-style: none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 1em;
+}
+#main, #aboutme, #experience {
+    display: block;
+    justify-content: space-around;
+}
+#main {
+    padding-bottom: 5%;
+}
+.title {
+    font-size: 5em;
+    width: 50%;
+    padding: 5% 18% 0% 18%;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.05em;
+}
+#headercontent, .content {
+    padding-left: 18%;
+    padding-bottom: 5%;
+    width: 50%;
+    font-size: 1.2em;
+}
+.content {
+    width: 40%;
+}
+hr {
+    color: white;
+    width: 64%;
+    height: 0.1px;
+    border-bottom:none;
+    border-top-color: white;
+}
+h2 {
+    font-size: 3em;
+    width: 50%;
+    padding: 3% 18% 0% 18%;
+}
+#aboutme section {
+    display: inline-block;
+    justify-content: space-around;
+    vertical-align: top;
+}
+.selfie img {
+    width:100%;
+    border-radius: 5%;
+}
+.selfie {
+    width: 24%;
+    display: inline-flex;
+}
+#experience .content {
+    width: 64%;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.exbox {
+    background-color: black;
+    opacity: 0.5;
+    display: inline-block;
+    width: 30%;
+    height:20em;
+}
