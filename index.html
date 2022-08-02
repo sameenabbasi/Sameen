@@ -1,71 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<div class=""><!DOCTYPE html></div>
+<html lang="en" class="">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="main.css" rel="stylesheet">
-    <title>Sameen</title>
+    <link rel="stylesheet" href="main.css">
+    <title>2.0</title>
 </head>
-
 <body>
-    <header>
-        <div id="logo">
-            <a href="#">
-                <img src="images/Vector1.png">
-            </a>
-        </div>
-        <nav>
-            <ul class="nav_links">
-                <li><a class="buttons" href="#aboutme">About Me</a></li>
-                <li><a class="buttons" href="#experience">Experience</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div id="main">
-        <h1 class="title">Hey, I'm Sameen.</h1>
-        <section id="headercontent">
-            <p>I’m a second year computer science student at Wilfrid Laurier University.
-                I enjoy learning how to create and program new things. [WRITE MORE HERE IDK WHAT TO WRITE BUT MAYBE MORE
-                SENTENCES]
-            </p>
-        </section>
+    <div class="nav">
+    <div id="logo">
+        <a href="#">
+            <img src="images/Vector1.png">
+        </a>
+    </div>
+    <nav>
+        <ul class="nav_links">
+            <li><a class="buttons" href="#aboutme">About Me</a></li>
+            <li><a class="buttons" href="#projects">Projects</a></li>
+            <li><a class="buttons" href="#experience">Experience</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div id= "header" class="header">
+        <h1>Hey, I'm Sameen.</h1>
+        <p>I’m a second year computer science student at Wilfrid Laurier University. 
+            I enjoy learning how to create and program new things. 
+            [WRITE MORE HERE IDK WHAT TO WRITE BUT MAYBE MORE SENTENCES]
+        </p>
     </div>
     <hr>
-    <div id="aboutme">
+    <div id="aboutme" class="content">
         <h2>About Me</h2>
-        <section class="content">
-            <p>
-                I’m a second year student studying comp sci at wlu. I enjoy working with technology. This is everything
-                I’ve done
-            <ul>
-                <li>Html/CSS</li>
-                <li>Javascript</li>
+        <div class="aboutme">
+        <div class="aboutmetext"><p>I’m a second year student studying comp sci at wlu. I enjoy working with technology. This is everything I’ve done
+            <ul class="list">
+                <li>HTML</li>
+                <li>CSS</li>
                 <li>Python</li>
-                <li>c# (Tiny bit)</li>
+                <li>Tiny amount of C#</li>
             </ul>
             outside of comp sci I enjoy cooking, taking walks and watching tiktoks.
-            </p>
-        </section>
-        <div class="selfie"><img src="images/selfie.jpg"></div>
+        </p></div>
+        <div class="aboutmeimg"><img class="selfie" src="images/selfie.jpg"></div>
+        </div>
     </div>
     <hr>
-    <div id="experience">
-        <h2>Experience &#38; Creations</h2>
-        <section class="content">
-            <div class="exbox">
-                <p>he</p>
+    <div id = "projects" class="content">
+        <h2>Projects</h2>
+        <div class="items">
+            <div class="item">
+                <h4>Data Structures</h4>
+                <p>Created data structures using python lists, and recreated a 
+                    linked version. Includes stacks, circlular queues and binary search tree.</p>
+                <p class="tinytext">Python</p>
+                <a href="https://github.com/sameenabbasi/Data-Structures-Python" target="_blank"><img src="images/github.png"></a>
             </div>
-            <div class="exbox">
-                <p>he</p>
+            <div class="item">
+                <h4>Personal Website</h4>
+                <p>Built a personal website using HTML and designed it using CSS, and added some effects using Javascript. (It's this website :))</p>
+                <p class="tinytext">HTML, CSS, Javascript</p>
+                <a><img src="images/github.png"></a>
             </div>
-            <div class="exbox">
-                <p>he</p>
+            <div class="item">
+                <h4>Untitled</h4>
+                <p></p>
+                <a><img src="images/github.png"></a>
             </div>
-        </section>
+        </div>
     </div>
-    <!-- DONE CSS UPTILL HERE -->
+    <hr>
+    <div id= "experience" class="content">
+        <h2>Experience</h2>
+        <div class="items">
+            <div class="item">
+                <h4>Internship @ Apexchat</h4>
+                <p>I did an internship at Apexchat, 
+                    worked in a team with other interns to learn how 
+                    to use API's and build a web app to train chat agents.</p>
+            </div>
+            <div class="item">
+                <h4>Director of Marketing @ The Citizens Foundation</h4>
+                <p>I am a Director of Marketing for a non-profit university club that fundraises 
+                    for the betterment of education in Pakistan.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="footer">
+        <p>Built and designed by Sameen Abbasi.</p>
+        <p>All Rights Reserved &#169;</p>
+    </div>
 </body>
-
 </html>
