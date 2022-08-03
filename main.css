@@ -196,10 +196,13 @@ h4 {
         width:80%;
     }
     .nav {
-        max-width: 60%;
+        visibility: hidden;
     }
     hr {
         width:80%;
+    }
+    li a {
+        margin: 1em;
     }
 }
 @media (max-width: 575px) {
