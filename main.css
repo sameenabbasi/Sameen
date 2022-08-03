@@ -207,13 +207,16 @@ h4 {
 }
 @media (max-width: 575px) {
     h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
     h2 {
         font-size: 2em;
     }
     .content, .header {
         width: 80%;
+    }
+    .header p {
+        width: 90%;
     }
     .aboutme {
         flex-direction: column;
