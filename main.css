@@ -196,7 +196,7 @@ h4 {
         width:80%;
     }
     .nav {
-        visibility: hidden;
+        display: none;
     }
     hr {
         width:80%;
@@ -207,10 +207,11 @@ h4 {
 }
 @media (max-width: 575px) {
     h1 {
-        font-size: 2.5em;
+        font-size: 2.2em;
+        padding-top:15%;
     }
     h2 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
     .content, .header {
         width: 80%;
@@ -222,8 +223,7 @@ h4 {
         flex-direction: column;
     }
     .aboutmeimg {
-        width: 100%;
-        padding-top: 5%;
+        display: none;
     }
     .items {
         flex-direction: column;
@@ -239,5 +239,8 @@ h4 {
     }
     #logo a {
         position:relative;
+    }
+    .footer {
+        padding: 10% 0% 10% 0%;
     }
 }
