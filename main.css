@@ -79,7 +79,9 @@ li a:hover {
 .nav_links {
     display:flex
 }
-
+#blink {
+    padding: 0% 0% 0% 1%;
+}
 hr {
     color: white;
     width: 64%;
@@ -107,6 +109,7 @@ h1 {
     font-size: 4.5em;
     padding-bottom:8%;
     font-family: "Playfair Display", serif;
+    display: inline-block;
 }
 p {
     width: 100%;
