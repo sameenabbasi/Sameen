@@ -219,6 +219,9 @@ h4 {
     .content, .header {
         width: 80%;
     }
+    .header {
+        padding: 15% 0% 20% 0%;
+    }
     .header p {
         width: 90%;
     }
