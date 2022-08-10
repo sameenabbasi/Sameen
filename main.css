@@ -61,8 +61,12 @@ body {
 .nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 2%;
+    height: 5%;
+}
+#logo a img {
+    width: 20%;
 }
 #logo a {
     position: fixed;
@@ -76,7 +80,9 @@ li a:hover {
     cursor: pointer;
 }
 .nav_links {
-    display:flex
+    display:flex;
+    height: 100%;
+    align-items: center;
 }
 #blink {
     padding: 0% 0% 0% 1%;

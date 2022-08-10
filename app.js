@@ -7,6 +7,14 @@ document.body.onload = function() {
     typewriter();
     blink();
 }
+document.body.onscroll = function () {
+    scrollRotate();
+};
+
+function scrollRotate() {
+    let image = document.getElementById("logoimg");
+    image.style.transform = "rotate(" + window.pageYOffset/5.3 + "deg)";
+}
 
 function typewriter() {
     if (i < text.length) {
