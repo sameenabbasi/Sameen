@@ -84,9 +84,7 @@ li a:hover {
     height: 100%;
     align-items: center;
 }
-#blink {
-    padding: 0% 0% 0% 1%;
-}
+
 hr {
     color: white;
     width: 64%;
@@ -101,6 +99,17 @@ hr {
 #experience .item {
     max-width: 40%;
 }
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.tinybox {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+} 
 .content {
     padding: 3% 0% 5%;
 }
@@ -158,6 +167,9 @@ h2 {
     border-radius: 5%;
     padding: 2%;
     max-width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 h4 {
     font-size:1.5vw;
@@ -170,14 +182,17 @@ h4 {
 .item a img {
     padding: 3%;
     align-self: center;
-    width: 15%;
+    width: 30px;
     float:right;
 }
-
+#experience .items .item .tinytext {
+    width:max-content;
+}
 .tinytext {
     font-size: 0.7em;
     color: rgba(255, 255, 255, 0.6);
     padding: 15% 0% 0% 0%;
+    width: min-content;
 }
 .footer p{
     font-size: 0.7em;

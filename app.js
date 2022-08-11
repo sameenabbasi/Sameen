@@ -2,18 +2,17 @@
 let speed = 400;
 let text = "Hi, I'm Sameen."
 let i = 0;
-
-document.body.onload = function() {
+window.onload = function() {
     typewriter();
     blink();
 }
-document.body.onscroll = function () {
+window.onscroll = function () {
     scrollRotate();
 };
 
 function scrollRotate() {
     let image = document.getElementById("logoimg");
-    image.style.transform = "rotate(" + window.pageYOffset/5.3 + "deg)";
+    image.style.transform = "rotate(" + window.pageYOffset/5.5 + "deg)";
 }
 
 function typewriter() {
