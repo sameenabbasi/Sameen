@@ -57,7 +57,7 @@ body {
     color:white;
     font-size: 1.2vw;
 }
-.d2, .d1, .d3 {
+/* .d2, .d1, .d3 {
     width: 20%;
     height: 20%;
     animation-duration: 10s;
@@ -92,7 +92,7 @@ body {
 @keyframes d2 {
     from {background-color: #ef1010;}
     to {background-color: #a912a9;}
-}
+} */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -106,6 +106,9 @@ body {
 }
 #logo a {
     position: fixed;
+}
+#logo {
+    background: transparent;
 }
 li a {
     margin: 2em;
