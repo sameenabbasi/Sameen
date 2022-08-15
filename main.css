@@ -51,48 +51,11 @@ html {
 }
 body {
     font-family: "Roboto Mono", monospace;
-    background-image: url("images/bg.png");
+    background-image: url("images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color:white;
     font-size: 1.2vw;
-}
-.d2, .d1, .d3 {
-    width: 20%;
-    height: 20%;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    padding: 5%;
-    filter: blur(30vh);
-    -webkit-filter: blur(25vh);
-    position: absolute;
-}
-.d1 {
-    animation-name: d1;
-    left: 5%;
-}
-.d2 {
-    animation-name: d2;
-    left:-15%;
-    top: 5%;
-}
-.d3 {
-    animation-name: d3;
-    top: 40%;
-    left:-10%;
-}
-@keyframes d3 {
-    from {background-color: #fda400;}
-    to {background-color: #f50505; }
-}
-@keyframes d1 {
-    from {background-color:  #ff0d00;}
-    to {background-color: #5720b5;}
-}
-@keyframes d2 {
-    from {background-color: #ef1010;}
-    to {background-color: #a912a9;}
 }
 .nav {
     display: flex;
@@ -312,26 +275,6 @@ h4 {
 @media (max-width: 575px) {
     body {
         background-image: url("images/mbg.png");
-    }
-    .d2, .d1, .d3 {
-        width: 40%;
-        height: 20%;
-        filter: blur(18vh);
-        -webkit-filter: blur(18vh);
-    }
-    .d1 {
-        animation-name: d1;
-        left: 30%;
-    }
-    .d2 {
-        animation-name: d2;
-        left:-15%;
-        top: 15%;
-    }
-    .d3 {
-        animation-name: d3;
-        top: 50%;
-        left:-10%;
     }
     h2 {
         font-size: 7vw;
