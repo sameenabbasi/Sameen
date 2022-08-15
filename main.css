@@ -65,6 +65,7 @@ body {
     animation-direction: alternate;
     padding: 5%;
     filter: blur(30vh);
+    -webkit-filter: blur(25vh);
     position: absolute;
 }
 .d1 {
@@ -316,6 +317,7 @@ h4 {
         width: 40%;
         height: 20%;
         filter: blur(18vh);
+        -webkit-filter: blur(18vh);
     }
     .d1 {
         animation-name: d1;
