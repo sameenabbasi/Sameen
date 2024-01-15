@@ -51,11 +51,104 @@ html {
 }
 body {
     font-family: "Roboto Mono", monospace;
-    background-image: url("images/bg.jpg");
+    background-image: url("images/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    color:white;
+    color: #000;
     font-size: 1.2vw;
+}
+.prof {
+    background-image: url("images/bgpro.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#nd{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 15%;
+}
+#nd #projecttext {
+    margin-left:10%;
+}
+#nd video{
+    border-radius:13%;
+}
+.selfie{
+    width: 30%;
+    margin-left: 5%;
+    border-radius: 7%;
+    border-style: solid;
+    border-color: white;
+    border-width: medium;
+}
+
+#myImg, #myImg2, #myImg3, #myImg4 {
+    border-radius: 8%;
+    border-color: #f1f1f1;
+    border-width: medium;
+    border-style: solid;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  #myImg{
+    width:60%;
+    height:fit-content;
+  }
+  #myImg2, #myImg3,#myImg4 {
+    width: 40%;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  #myImg2:hover {opacity: 0.7;}
+  #myImg3:hover {opacity: 0.7;}
+  #myImg4:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pics{
+    display:flex;
+    gap:5%;
+    padding-top: 5%;
+    padding-bottom: 3%;
 }
 .nav {
     display: flex;
@@ -64,6 +157,9 @@ body {
     padding: 2%;
     height: 5%;
     position:relative;
+}
+.nav li {
+    list-style: none;
 }
 #logo a img {
     width: 20%;
@@ -82,18 +178,89 @@ li a:hover {
     text-underline-offset: 5px;
     cursor: pointer;
 }
+
+.pro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.propage{
+    width:64%;
+    justify-content: center;
+    padding-bottom: 5%;
+    padding-top:5%;
+    margin:auto;
+}
+#titlepro{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.challenge{
+    display: flex;
+    flex-direction: column;
+    margin-right:5%;
+}
+#chal {
+    display: flex;
+    flex-direction: column;
+}
+ul{
+    list-style-type: circle;
+}
+li {
+    margin-bottom: 3%;
+}
+#infoo{
+    width:45%;
+}
+#infoo h2 {
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.persona{
+    width:55%;
+}
+#notes{
+    width:40%;
+}
+#enlarged-image {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+}
+.problem{
+    font-style: italic;
+    font-size: 1.2em;
+    margin:5% 0% 5% 0%;
+    text-align: center;
+    line-height: 120%;
+}
+#chal .problem{
+    font-size: 1em;
+    text-align: left;
+}
 .nav_links {
     display:flex;
     height: 100%;
     align-items: center;
 }
-
+video {
+    border-radius: 9%;
+    margin-right: 5%;
+    margin-left: 10%;
+}
 hr {
-    color: white;
+    color: rgb(0, 0, 0);
     width: 64%;
     height: 0.1px;
     border-bottom:none;
-    border-top-color: white;
+    border-top-color: rgba(46, 46, 46, 0.722);
     position: relative;
 }
 .content, .header {
@@ -120,7 +287,7 @@ hr {
     scroll-margin-top: 10em;
 }
 .header {
-    padding: 10% 0% 10%;
+    padding: 15% 0% 10%;
 }
 .header p {
     width: 80%;
@@ -130,9 +297,18 @@ h1 {
     padding-bottom:8%;
     display: inline-block;
     font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    /*letter-spacing: 0.2vw;*/
 }
-p {
+b {
+    font-weight: 900;
+}
+p, li {
     width: 100%;
+    line-height: 150%;
+}
+.second {
+    padding-top: 10%;
 }
 h2 {
     font-size: 3vw;
@@ -148,16 +324,19 @@ h2 {
     width:100%;
 }
 .aboutmeimg {
-    width:60%;
-    border-radius:5%;
-    margin-left:2%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width:70%;
 }
 .content ul {
     margin: 5%;
 }
-.selfie {
-    width:100%;
-    border-radius: 4%;
+.challenge p{
+    padding-bottom: 5%;
+}
+.draw{
+    width:75%;
 }
 .list {
     list-style: inside;
@@ -196,18 +375,18 @@ h4 {
 }
 .tinytext {
     font-size: 0.7em;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(1, 0, 0, 0.6);
     padding: 15% 0% 0% 0%;
     width: min-content;
 }
 .footer p{
-    font-size: 0.7em;
-    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8em;
+    color: rgb(0, 0, 0);
     padding: 2% 0% 0% 0%;
     text-align: center;
 }
 .footer {
-    padding: 10% 0% 3% 0%;
+    padding: 5% 0% 3% 0%;
 }
 .contact {
     display: flex;
@@ -215,7 +394,11 @@ h4 {
     align-items: center;
 }
 .contactlinks {
-    padding: 20px 10px 0 10px;
+    padding-top: 2%;
+    width:5%;
+}
+.contact img{
+    width:30%;
 }
 .reveal {
     position:relative;
@@ -274,7 +457,7 @@ h4 {
 }
 @media (max-width: 575px) {
     body {
-        background-image: url("images/mbg.png");
+        background-image: url("images/bg.png");
     }
     h2 {
         font-size: 7vw;
